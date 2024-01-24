@@ -3,54 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart Product</title>
+    <title>Products</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="head__section">
-          <i class="fi-rr-arrow-small-left"></i>
-          <span class="logo">CR</span>
-          <i class="fi-sr-heart"></i>
-        </div>
-        <div class="discount">
-          30%
-        </div>
-        <div class="display__product">
-          <img src="https://freepngimg.com/thumb/shoes/55582-9-sneakers-download-free-image-thumb.png" alt="">
-          <div class="slider">
-            <span></span>
-            <span></span>
-            <span class="active"></span>
-            <span></span>
-          </div>
-        </div>
-        <div class="product__details">
-          <div class="title__section">
-            <div class="title">
-              <h2>Nike Air Max 200</h2>
-              <p>Built for natural motion</p>
-            </div>
-            <span>
-              <i class="fi-sr-star"></i>
-              <p>(4.5)</p>
-            </span>
-          </div>
-          <div class="product__colors Btn">
-            <p>Available Colors:</p>
-            <ul>
-              <li><button></button></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="product__add">
-            <span class="price">$249</span>
-            <button><i class="fi-sr-shopping-cart-add"></i>Add To Cart</button>
-          </div>
-        </div>
+    <!------- Product Cards -------->
+
+      <!----- Phone Card ----->
+      <div id="cards">
+        <!-- Card Image -->
+        <img id="phone-img" src="./images/apple-iphone-15-yellow.jpg" alt="">
+        <!-- Card Title -->
+        <h4>iphone</h4>
+        <!-- Card Description -->
+        <p>Discription</p>
+        <!-- Card Price -->
+        <p id="phone-price">Price: 1000$</p>
+        <!-- Card Color List -->
+        <ul>
+          <li><button onclick="changePhoneColor()" id="phone-yellow"></button></li>
+          <li><button onclick="changePhoneColor2()" id="phone-blue"></button></li>
+          <li><button onclick="changePhoneColor3()" id="phone-pink"></button></li>
+        </ul>
       </div>
+
+      <!----- Car Card ----->
+      <div id="cards">
+        <!-- Card Image -->
+        <img id="car-img" src="" alt="">
+        <!-- Card Title -->
+        <h4>Car</h4>
+        <!-- Card Description -->
+        <p>Discription</p>
+        <!-- Card Price -->
+        <p>Price: 80$</p>
+        <!-- Card Color List -->
+        <ul>
+          <li><button></button></li>
+          <li><button></button></li>
+          <li><button></button></li>
+        </ul>
+      </div>
+
+      <!----- Watch Card ----->
+      <div id="cards">
+        <!-- Card Image -->
+        <img id="watch-img" src="./images/starlight-watch-aluminum-midnight.jpg" alt="">
+        <!-- Card Title -->
+        <h4>Watch</h4>
+        <!-- Card Description -->
+        <p>Discription</p>
+        <!-- Card Price -->
+        <p id="watch-price">Price: 700$</p>
+        <!-- Card Color List -->
+        <ul>
+          <li><button onclick="changeWatchColor()" id="watch-starlight"></button></li>
+          <li><button onclick="changeWatchColor2()" id="watch-lightpink"></button></li>
+          <li><button onclick="changeWatchColor3()" id="watch-winterblue"></button></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!------- Add JavaScript ------->
     <script src="script.js"></script>
 </body>
 </html>
