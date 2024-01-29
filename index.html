@@ -11,25 +11,31 @@
     <!------- Product Cards -------->
 
       <!----- Phone Card ----->
+    <div id='phone'>
       <div id="cards">
         <!-- Card Image -->
         <img id="phone-img" src="./images/apple-iphone-15-yellow.jpg" alt="">
         <!-- Card Title -->
-        <h4>iphone 15</h4>
+        <h4 id="namePhone">iphone 15</h4>
         <!-- Card Description -->
-        <p>256 GB - 8GB RAM</p>
+        <p id="infoPhone">256 GB - 8GB RAM</p>
         <!-- Card Color List -->
-        <ul>
-          <li><button onclick="changePhoneColor()" id="phone-yellow"></button></li>
-          <li><button onclick="changePhoneColor2()" id="phone-blue"></button></li>
-          <li><button onclick="changePhoneColor3()" id="phone-pink"></button></li>
+        <ul >
+          <div id="colorPhone">
+          <li><button onclick="productSystem()" id="phone-yellow"></button></li>
+          <li><button onclick="productSystem()" id="phone-blue"></button></li>
+          <li><button onclick="productSystem()" id="phone-pink"></button></li>
+          </div>
+
         </ul>
         <!-- Card Price -->
         <p id="phone-price">Price: $1000</p>
         <!-- Card Buy Button -->
-        <button id="buy-btn">Buy</button>
+        <button onclick="factors()" id="buy-btn">Buy</button>
       </div>
 
+    </div>
+      
       <!----- Car Card ----->
       <div id="cards">
         <!-- Card Image -->
@@ -40,10 +46,10 @@
         <p>Description</p>
         <!-- Card Color List -->
         <ul>
-          <li><button onclick="changeCarColor()" id="car-black"></button></li>
-          <li><button onclick="changeCarColor2()" id="car-jupiterRed"></button></li>
-          <li><button onclick="changeCarColor3()" id="car-polarWhite"></button></li>
-          <li><button onclick="changeCarColor4()" id="car-cavansiteBlue"></button></li>
+          <li><button onclick="productSystem()" id="car-black"></button></li>
+          <li><button onclick="productSystem()" id="car-jupiterRed"></button></li>
+          <li><button onclick="productSystem()" id="car-polarWhite"></button></li>
+          <li><button onclick="productSystem()" id="car-cavansiteBlue"></button></li>
         </ul>
         <!-- Card Price -->
         <p id="car-price">Price: $500,000</p>
@@ -61,9 +67,9 @@
         <p>SE 2022 Aluminum Case 40mm</p>
         <!-- Card Color List -->
         <ul>
-          <li><button onclick="changeWatchColor()" id="watch-starlight"></button></li>
-          <li><button onclick="changeWatchColor2()" id="watch-lightpink"></button></li>
-          <li><button onclick="changeWatchColor3()" id="watch-winterblue"></button></li>
+          <li><button onclick="productSystem()" id="watch-starlight"></button></li>
+          <li><button onclick="productSystem()" id="watch-lightpink"></button></li>
+          <li><button onclick="productSystem()" id="watch-winterblue"></button></li>
         </ul>
         <!-- Card Price -->
         <p id="watch-price">Price: $500</p>
